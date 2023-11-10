@@ -16,61 +16,32 @@ excerpt: "The final key is to deliver. When learning these tools of the trade, f
 intro: 
   - excerpt: 'I am a Sr. Software Engineer with 8 years of professional experience. I am well versed in the JavaScript ecosystem with expertise in Node.js and Vue.js. I am also an expert Ruby on Rails developer. In my time as an engineer, I have worked with tools such as Elasticsearch, MongoDB, PostgreSQL, Nightwatch, mocha, RSpec, Redis, AWS S3, Jenkins and many other web and internetworking technologies'
 feature_row:
-  - image_path: assets/images/maintenance-sprint.png
-    alt: "placeholder image 1"
-    title: "Placeholder 1"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-  - image_path: /assets/images/collaborate.png
-    image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
-    alt: "placeholder image 2"
-    title: "Placeholder 2"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-    url: "#test-link"
+  - image_path: assets/images/ryobi-holidays-image.svg
+    alt: "Ryobi Holiday"
+    title: "Add To Cart Integration"
+    excerpt: "Used Elixir and Vue.js to integrate Ryobi's product site with The Home Depot's Cart API resulting in a deeper partnership between THD and TTI"
+    url: "https://www.ryobitools.com/"
+    btn_label: "Check it out"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/lsa-logo.svg
+    alt: "Ridgid LSA Logo"
+    title: "Automatic Direct Ship"
+    excerpt: "I used Elixir, Ruby, and Pgsql to integrate Ridgid's product site with FedEx's Ship API and their company ERP system to enable a simple tool repairs service"
+    url: "https://claims.ridgidpower.com/login"
     btn_label: "Read More"
     btn_class: "btn--primary"
-  - image_path: /assets/images/tool-bag.png
-    title: "Placeholder 3"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-feature_row2:
-  - image_path: /assets/images/development.png
-    alt: "placeholder image 2"
-    title: "Placeholder Image Left Aligned"
-    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Left aligned with `type="left"`'
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-feature_row3:
-  - image_path: /assets/images/padlock.png
-    alt: "placeholder image 2"
-    title: "Placeholder Image Right Aligned"
-    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Right aligned with `type="right"`'
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-feature_row4:
-  - image_path: /assets/images/strategy.png
-    alt: "placeholder image 2"
-    title: "Placeholder Image Right Aligned"
-    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Right aligned with `type="right"`'
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-feature_row5:
-  - image_path: /assets/images/journey-man-image.png
-    alt: "placeholder image 2"
-    title: "Placeholder Image Center Aligned"
-    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Centered with `type="center"`'
-    url: "#test-link"
-    btn_label: "Read More"
+  - image_path: /assets/images/hungry-menu.png
+    title: "Node x Mongo x Kafka"
+    excerpt: "micorsevice based app using node.js and mongo. Kafka is being usedto integrate microservices for things like geolocation tracking, payments and communications"
+    url: "https://claims.ridgidpower.com/login"
+    btn_label: "Read About The Project"
     btn_class: "btn--primary"
 ---
 
-![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/kyle.jpg){: .align-left} {% include feature_row id="intro" type="center" %}
+![profile-image]({{ site.url }}{{ site.baseurl }}/assets/images/kyle.jpg){: .align-center .img-author style="border-radius: 50%;"} {% include feature_row id="intro" type="center" %}
 
 {% include feature_row %}
 
 {% for post in site.posts limit: 12 %}
   {% include archive-single.html type="grid" %}
 {% endfor %}
-
-{% include feature_row id="feature_row5" type="center" %}

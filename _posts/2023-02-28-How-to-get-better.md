@@ -1,8 +1,14 @@
 ---
 title: How to Get Better as a Web Software Engineer
-published: True
+published: true
 description: Some thoughts on how to get from junior developer to better and gain real production skills.
-tags: upskill, advice, webdevelopment, webdeveloper
+categories:
+- advice
+tags: 
+- upskill 
+- advice
+- web development
+- web developer
 # cover_image: https://direct_url_to_image.jpg
 # Use a ratio of 100:42 for best results.
 # published_at: 2023-02-28 18:32 +0000

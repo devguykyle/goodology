@@ -1,8 +1,8 @@
 var store = [{
         "title": "How to Get Better as a Web Software Engineer",
-        "excerpt":"From Junior to Better As I look back on my career as a software engineer from the perspective of a senior software engineer I realize that a junior web software engineer isn’t someone who knows nothing, it is someone who knows enough to make a web app dangerous. Getting out...","categories": [],
-        "tags": ["upskill,","advice,","webdevelopment,","webdeveloper"],
-        "url": "/How-to-get-better/",
+        "excerpt":"From Junior to Better As I look back on my career as a software engineer from the perspective of a senior software engineer I realize that a junior web software engineer isn’t someone who knows nothing, it is someone who knows enough to make a web app dangerous. Getting out...","categories": ["advice"],
+        "tags": ["upskill","advice","web development","web developer"],
+        "url": "/advice/How-to-get-better/",
         "teaser": null
       },{
         "title": "Projects",
