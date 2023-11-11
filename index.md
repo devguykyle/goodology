@@ -10,7 +10,7 @@ header:
   overlay_image: assets/images/blue-purple-abstract.jpg
   actions:
     - label: "Read About It"
-      url: "/How-to-get-better"
+      url: "/advice/How-to-get-better"
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 excerpt: "The final key is to deliver. When learning these tools of the trade, find a project to use them in. Either become a serious contributor to an open source project or build a tool yourself. Whichever option you choose, make sure you do it with care."
 intro: 
