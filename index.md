@@ -10,7 +10,7 @@ header:
   overlay_image: assets/images/blue-purple-abstract.jpg
   actions:
     - label: "Read About It"
-      url: "/advice/How-to-get-better"
+      url: "/advice/how-to-get-better"
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 excerpt: "The final key is to deliver. When learning these tools of the trade, find a project to use them in. Either become a serious contributor to an open source project or build a tool yourself. Whichever option you choose, make sure you do it with care."
 intro: 
@@ -38,7 +38,7 @@ feature_row:
     btn_class: "btn--primary"
 ---
 
-![profile-image]({{ site.url }}{{ site.baseurl }}/assets/images/kyle.jpg){: .align-center .img-author style="border-radius: 50%;"} {% include feature_row id="intro" type="center" %}
+![profile-image]({{ site.url }}{{ site.baseurl }}/assets/images/journey-man-image.png){: .align-center .img-author style="border-radius: 50%; width: 20%"} {% include feature_row id="intro" type="center" %}
 
 {% include feature_row %}
 
