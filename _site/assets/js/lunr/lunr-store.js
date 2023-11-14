@@ -2,90 +2,36 @@ var store = [{
         "title": "How to Get Better as a Web Software Engineer",
         "excerpt":"From Junior to Better As I look back on my career as a software engineer from the perspective of a senior software engineer I realize that a junior web software engineer isn’t someone who knows nothing, it is someone who knows enough to make a web app dangerous. Getting out...","categories": ["advice"],
         "tags": ["upskill","advice","web development","web developer"],
-        "url": "/advice/How-to-get-better/",
+        "url": "/advice/how-to-get-better/",
         "teaser": null
       },{
-        "title": "Projects",
-        "excerpt":"You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...","categories": ["business"],
+        "title": "Architecting WebApps",
+        "excerpt":"You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...","categories": ["software","development"],
         "tags": [],
-        "url": "/business/projects-copy-10/",
+        "url": "/software/development/architecting-webapps/",
         "teaser": null
       },{
-        "title": "Projects",
-        "excerpt":"You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...","categories": ["business"],
+        "title": "Data on Persons",
+        "excerpt":" def print_hi(name)   puts \"Hi, #{name}\" end print_hi('Tom') #=&gt; prints 'Hi, Tom' to STDOUT.  ","categories": ["technology","philosophy"],
         "tags": [],
-        "url": "/business/projects-copy-11/",
+        "url": "/technology/philosophy/data-on-persons/",
         "teaser": null
       },{
-        "title": "Projects",
-        "excerpt":"You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...","categories": ["business"],
+        "title": "Implementing Algorithms, Basic Principles",
+        "excerpt":"You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...","categories": ["software","development"],
         "tags": [],
-        "url": "/business/projects-copy-12/",
+        "url": "/software/development/implementing-algorithms-pt-one/",
         "teaser": null
       },{
-        "title": "Projects",
-        "excerpt":"You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...","categories": ["business"],
+        "title": "What Is Kafka Used For",
+        "excerpt":"You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...","categories": ["web","security"],
         "tags": [],
-        "url": "/business/projects-copy-13/",
+        "url": "/web/security/what-is-kafka/",
         "teaser": null
       },{
-        "title": "Projects",
-        "excerpt":"You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...","categories": ["business"],
+        "title": "What Is Redis Used For",
+        "excerpt":"You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...","categories": ["software","development"],
         "tags": [],
-        "url": "/business/projects-copy-2/",
-        "teaser": null
-      },{
-        "title": "Projects",
-        "excerpt":"You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...","categories": ["business"],
-        "tags": [],
-        "url": "/business/projects-copy-3/",
-        "teaser": null
-      },{
-        "title": "Projects",
-        "excerpt":"You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...","categories": ["business"],
-        "tags": [],
-        "url": "/business/projects-copy-4/",
-        "teaser": null
-      },{
-        "title": "Projects",
-        "excerpt":"You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...","categories": ["business"],
-        "tags": [],
-        "url": "/business/projects-copy-5/",
-        "teaser": null
-      },{
-        "title": "Projects",
-        "excerpt":"You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...","categories": ["business"],
-        "tags": [],
-        "url": "/business/projects-copy-6/",
-        "teaser": null
-      },{
-        "title": "Projects",
-        "excerpt":"You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...","categories": ["business"],
-        "tags": [],
-        "url": "/business/projects-copy-7/",
-        "teaser": null
-      },{
-        "title": "Projects",
-        "excerpt":"You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...","categories": ["business"],
-        "tags": [],
-        "url": "/business/projects-copy-8/",
-        "teaser": null
-      },{
-        "title": "Projects",
-        "excerpt":"You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...","categories": ["business"],
-        "tags": [],
-        "url": "/business/projects-copy-9/",
-        "teaser": null
-      },{
-        "title": "Projects",
-        "excerpt":"You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...","categories": ["business"],
-        "tags": [],
-        "url": "/business/projects-copy/",
-        "teaser": null
-      },{
-        "title": "Projects",
-        "excerpt":"You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...","categories": ["business"],
-        "tags": [],
-        "url": "/business/projects/",
+        "url": "/software/development/what-is-redis/",
         "teaser": null
       }]

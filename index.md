@@ -42,6 +42,4 @@ feature_row:
 
 {% include feature_row %}
 
-{% for post in site.posts limit: 12 %}
-  {% include archive-single.html type="grid" %}
-{% endfor %}
+{% include posts_layout.html type="grid" %}
