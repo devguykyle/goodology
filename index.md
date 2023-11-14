@@ -38,7 +38,7 @@ feature_row:
     btn_class: "btn--primary"
 ---
 
-![profile-image]({{ site.url }}{{ site.baseurl }}/assets/images/journey-man-image.png){: .align-center .img-author style="border-radius: 50%; width: 20%"} {% include feature_row id="intro" type="center" %}
+![profile-image]({{ site.url }}{{ site.baseurl }}/assets/images/journey-man-image.png){: .align-center .img-author style="border-radius: 50%;"} {% include feature_row id="intro" type="center" %}
 
 {% include feature_row %}
 
