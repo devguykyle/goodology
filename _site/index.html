@@ -192,7 +192,7 @@
     
 
     <section class="page__content" itemprop="text">
-      <p><img src="http://localhost:4000/assets/images/journey-man-image.png" alt="profile-image" class="align-center img-author" style="border-radius: 50%; width: 20%" /></p>
+      <p><img src="http://localhost:4000/assets/images/journey-man-image.png" alt="profile-image" class="align-center img-author" style="border-radius: 50%;" /></p>
 
 <div class="feature__wrapper">
 
@@ -313,6 +313,40 @@
 <ul style="list-style-type: none">
   
     <li>
+      <a href="/software/development/rails-mongo/">Rails &amp; Mongo without generators</a>
+      <p style="display:inline-block"><ol>
+  <li><code class="language-plaintext highlighter-rouge">gem install rails</code></li>
+  <li><code class="language-plaintext highlighter-rouge">rails new journey-app --skip-active-record</code> if you’re going to use another test suite such as RSpec add <code class="language-plaintext highlighter-rouge">--skip-test --skip-system-test</code></li>
+  <li>add <code class="language-plaintext highlighter-rouge">gem 'mongoid'</code> to your gem file</li>
+  <li>run <code class="language-plaintext highlighter-rouge">bundle install</code> in your terminal</li>
+  <li>create a file called config/mongoid.yml:</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">  <span class="na">development</span><span class="pi">:</span>
+    <span class="na">clients</span><span class="pi">:</span>
+      <span class="na">default</span><span class="pi">:</span>
+        <span class="na">database</span><span class="pi">:</span> <span class="s">journey-app</span>
+        <span class="na">hosts</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="s">localhost:27017</span>
+        <span class="na">options</span><span class="pi">:</span>
+          <span class="na">server_selection_timeout</span><span class="pi">:</span> <span class="m">1</span>
+  </code></pre></figure>
+
+<ol>
+  <li>you can now run your application server using <code class="language-plaintext highlighter-rouge">bin/rails s</code></li>
+  <li>create a file named app/models/journey:
+```
+  class Path
+ include Mongoid::Document
+ include Mongoid::Timestamps
+ field :title, type: String</li>
+</ol>
+
+</p>
+    </li>
+    <hr />
+  
+    <li>
       <a href="/software/development/what-is-redis/">What Is Redis Used For</a>
       <p style="display:inline-block"><p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
@@ -337,6 +371,14 @@
     <hr />
   
     <li>
+      <a href="/software/development/architecting-webapps/">Architecting WebApps</a>
+      <p style="display:inline-block"><p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+</p>
+    </li>
+    <hr />
+  
+    <li>
       <a href="/technology/philosophy/data-on-persons/">Data on Persons</a>
       <p style="display:inline-block">
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
@@ -344,14 +386,6 @@
 <span class="k">end</span>
 <span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
 <span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
-</p>
-    </li>
-    <hr />
-  
-    <li>
-      <a href="/software/development/architecting-webapps/">Architecting WebApps</a>
-      <p style="display:inline-block"><p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
-
 </p>
     </li>
     <hr />
@@ -402,7 +436,7 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2023 Kyle.</div>
+<div class="page__footer-copyright">&copy; 2023 Kyle. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

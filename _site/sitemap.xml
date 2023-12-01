@@ -5,12 +5,12 @@
 <lastmod>2023-02-28T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/software/development/architecting-webapps/</loc>
-<lastmod>2023-10-15T14:47:42-05:00</lastmod>
+<loc>http://localhost:4000/technology/philosophy/data-on-persons/</loc>
+<lastmod>2023-10-08T14:47:42-05:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/technology/philosophy/data-on-persons/</loc>
-<lastmod>2023-10-15T14:47:42-05:00</lastmod>
+<loc>http://localhost:4000/software/development/architecting-webapps/</loc>
+<lastmod>2023-10-11T14:47:42-05:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/software/development/implementing-algorithms-pt-one/</loc>
@@ -22,6 +22,10 @@
 </url>
 <url>
 <loc>http://localhost:4000/software/development/what-is-redis/</loc>
+<lastmod>2023-10-15T14:47:42-05:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/software/development/rails-mongo/</loc>
 <lastmod>2023-10-15T14:47:42-05:00</lastmod>
 </url>
 <url>

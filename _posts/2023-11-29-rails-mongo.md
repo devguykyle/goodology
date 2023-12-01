@@ -5,33 +5,34 @@ date:   2023-10-15 15:47:42 -0400
 categories: software development
 ---
 1. `gem install rails`
-2. `rails new journey-app --skip-active-record` add if you're going to use another test suite such as RSpec`--skip-test --skip-system-test`
+2. `rails new journey-app --skip-active-record` if you're going to use another test suite such as RSpec add `--skip-test --skip-system-test`
 3. add `gem 'mongoid'` to your gem file
 4. run `bundle install` in your terminal
-5. create a file called mongoid.yml
-{% highlight yaml %}
-development:
-  clients:
-    default:
-      database: journey-app
-      hosts:
-        - localhost:27017
-      options:
-        server_selection_timeout: 1
-{% endhighlight %}
-6. you can now run your application server using `bin/rails` s
-7. created a filed named app/models/journey:
-{% highlight ruby %}
-class Path
-  include Mongoid::Document
-  include Mongoid::Timestamps
-  field :title, type: String
+5. create a file called config/mongoid.yml:
+  {% highlight yaml %}
+  development:
+    clients:
+      default:
+        database: journey-app
+        hosts:
+          - localhost:27017
+        options:
+          server_selection_timeout: 1
+  {% endhighlight %}
+6. you can now run your application server using `bin/rails s`
+7. create a file named app/models/journey:
+```
+  class Path
+    include Mongoid::Document
+    include Mongoid::Timestamps
+    field :title, type: String
 
-  has_many :locations, dependent: :destroy
-  has_many :comments, dependent: :destroy
-end
-{% endhighlight %}
-8. created a filed named app/models/location:
+    has_many :locations, dependent: :destroy
+    has_many :comments, dependent: :destroy
+  end
+```
+
+8. create a file named app/models/location:
 {% highlight ruby %}
 class Location
   include Mongoid::Document
@@ -43,7 +44,7 @@ class Location
   has_many :comments, dependent: :destroy
 end
 {% endhighlight %}
-9. created a filed named app/models/comment:
+9. create a file named app/models/comment:
 {% highlight ruby %}
 class Comment
   include Mongoid::Document
