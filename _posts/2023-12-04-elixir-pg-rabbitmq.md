@@ -3,7 +3,7 @@ title: Elixir, Postgres, RabbitMQ Architecture
 published: true
 description: A look at system design utilizing elixir, phoenix, RabbitMQ, PostgreSQL, and other elixir/phoenix features
 categories:
-- software engineering
+- web software engineering
 tags: 
 - upskill 
 - advice

@@ -1,11 +1,11 @@
 ---
 layout: single
-title:  "Rails & Mongo without generators"
-date:   2023-10-15 15:47:42 -0400
-categories: web software development
+title:  "Rails & Mongo API without generators"
+date:   2023-12-04 15:47:42 -0400
+categories: software development
 ---
 1. `gem install rails`
-2. `rails new journey-app --skip-active-record` if you're going to use another test suite such as RSpec add `--skip-test --skip-system-test`
+2. `rails new journey-app --api --skip-active-record` if you're going to use another test suite such as RSpec add `--skip-test --skip-system-test`
 3. add `gem 'mongoid'` to your gem file
 4. run `bundle install` in your terminal
 5. create a file called config/mongoid.yml:
