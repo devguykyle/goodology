@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>Rails &amp; Mongo API without generators - Backlog_</title>
-<meta name="description" content="gem install rails   rails new journey-app --api --skip-active-record if you’re going to use another test suite such as RSpec add --skip-test --skip-system-test   add gem &#39;mongoid&#39; to your gem file   run bundle install in your terminal   create a file called config/mongoid.yml:     development:     clients:       default:         database: journey-app         hosts:           - localhost:27017         options:           server_selection_timeout: 1        you can now run your application server using bin/rails s">
+<meta name="description" content="gem install rails   rails new journey-app --api --skip-active-record if you’re going to use another test suite such as RSpec add --skip-test --skip-system-test   add gem &#39;mongoid&#39; to your gem file   run bundle install in your terminal   create a file called config/mongoid.yml:     development:     clients:       default:         database: journey-app         hosts:           - localhost:27017         options:           server_selection_timeout: 1">
 
 
   <meta name="author" content="Kyle">
@@ -26,7 +26,7 @@
 <meta property="og:url" content="http://localhost:4000/software/development/rails-mongo-api/">
 
 
-  <meta property="og:description" content="gem install rails   rails new journey-app --api --skip-active-record if you’re going to use another test suite such as RSpec add --skip-test --skip-system-test   add gem &#39;mongoid&#39; to your gem file   run bundle install in your terminal   create a file called config/mongoid.yml:     development:     clients:       default:         database: journey-app         hosts:           - localhost:27017         options:           server_selection_timeout: 1        you can now run your application server using bin/rails s">
+  <meta property="og:description" content="gem install rails   rails new journey-app --api --skip-active-record if you’re going to use another test suite such as RSpec add --skip-test --skip-system-test   add gem &#39;mongoid&#39; to your gem file   run bundle install in your terminal   create a file called config/mongoid.yml:     development:     clients:       default:         database: journey-app         hosts:           - localhost:27017         options:           server_selection_timeout: 1">
 
 
 
@@ -268,7 +268,7 @@
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Rails &amp; Mongo API without generators">
-    <meta itemprop="description" content="  gem install rails  rails new journey-app --api --skip-active-record if you’re going to use another test suite such as RSpec add --skip-test --skip-system-test  add gem &#39;mongoid&#39; to your gem file  run bundle install in your terminal  create a file called config/mongoid.yml:  development:    clients:      default:        database: journey-app        hosts:          - localhost:27017        options:          server_selection_timeout: 1    you can now run your application server using bin/rails s">
+    <meta itemprop="description" content="  gem install rails  rails new journey-app --api --skip-active-record if you’re going to use another test suite such as RSpec add --skip-test --skip-system-test  add gem &#39;mongoid&#39; to your gem file  run bundle install in your terminal  create a file called config/mongoid.yml:  development:    clients:      default:        database: journey-app        hosts:          - localhost:27017        options:          server_selection_timeout: 1">
     <meta itemprop="datePublished" content="2023-12-04T14:47:42-05:00">
     
 
@@ -318,16 +318,22 @@
         <span class="na">hosts</span><span class="pi">:</span>
           <span class="pi">-</span> <span class="s">localhost:27017</span>
         <span class="na">options</span><span class="pi">:</span>
-          <span class="na">server_selection_timeout</span><span class="pi">:</span> <span class="m">1</span>
-  </code></pre></figure>
+          <span class="na">server_selection_timeout</span><span class="pi">:</span> <span class="s">1</span></code></pre></figure>
 
 <ol>
-  <li>
-    <p>you can now run your application server using <code class="language-plaintext highlighter-rouge">bin/rails s</code></p>
-  </li>
-  <li>
-    <p>create a controller file at app/controllers/projects_controller.rb</p>
-  </li>
+  <li>you can now run your application server using <code class="language-plaintext highlighter-rouge">bin/rails s</code></li>
+  <li>create a file named app/models/project:</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">  <span class="k">class</span> <span class="nc">Project</span>
+    <span class="kp">include</span> <span class="no">Mongoid</span><span class="o">::</span><span class="no">Document</span>
+    <span class="kp">include</span> <span class="no">Mongoid</span><span class="o">::</span><span class="no">Timestamps</span>
+    <span class="n">field</span> <span class="ss">:title</span><span class="p">,</span> <span class="ss">type: </span><span class="no">String</span>
+    <span class="n">field</span> <span class="ss">:description</span><span class="p">,</span> <span class="ss">type: </span><span class="no">String</span>
+  <span class="k">end</span></code></pre></figure>
+
+<ol>
+  <li>create a controller file at app/controllers/projects_controller.rb</li>
 </ol>
 
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">Api::V1::ProjectsController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>

@@ -9,7 +9,7 @@ categories: software development
 3. add `gem 'mongoid'` to your gem file
 4. run `bundle install` in your terminal
 5. create a file called config/mongoid.yml:
-  {% highlight yaml %}
+{% highlight yaml %}
   development:
     clients:
       default:
@@ -18,8 +18,18 @@ categories: software development
           - localhost:27017
         options:
           server_selection_timeout: 1
-  {% endhighlight %}
+{% endhighlight %}
+
 6. you can now run your application server using `bin/rails s`
+7. create a file named app/models/project:
+{% highlight ruby %}
+  class Project
+    include Mongoid::Document
+    include Mongoid::Timestamps
+    field :title, type: String
+    field :description, type: String
+  end
+{% endhighlight %}
 
 8. create a controller file at app/controllers/projects_controller.rb
 {% highlight ruby %}
