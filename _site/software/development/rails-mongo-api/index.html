@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>What Is Redis Used For - Backlog_</title>
-<meta name="description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.">
+<!-- begin _includes/seo.html --><title>Rails &amp; Mongo API without generators - Backlog_</title>
+<meta name="description" content="gem install rails   rails new journey-app --api --skip-active-record if you’re going to use another test suite such as RSpec add --skip-test --skip-system-test   add gem &#39;mongoid&#39; to your gem file   run bundle install in your terminal   create a file called config/mongoid.yml:     development:     clients:       default:         database: journey-app         hosts:           - localhost:27017         options:           server_selection_timeout: 1        you can now run your application server using bin/rails s">
 
 
   <meta name="author" content="Kyle">
@@ -22,30 +22,30 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Backlog_">
-<meta property="og:title" content="What Is Redis Used For">
-<meta property="og:url" content="http://localhost:4000/software/development/what-is-redis/">
+<meta property="og:title" content="Rails &amp; Mongo API without generators">
+<meta property="og:url" content="http://localhost:4000/software/development/rails-mongo-api/">
 
 
-  <meta property="og:description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2023-10-15T14:47:42-05:00">
+  <meta property="og:description" content="gem install rails   rails new journey-app --api --skip-active-record if you’re going to use another test suite such as RSpec add --skip-test --skip-system-test   add gem &#39;mongoid&#39; to your gem file   run bundle install in your terminal   create a file called config/mongoid.yml:     development:     clients:       default:         database: journey-app         hosts:           - localhost:27017         options:           server_selection_timeout: 1        you can now run your application server using bin/rails s">
 
 
 
 
 
-  
+
+
+  <meta property="article:published_time" content="2023-12-04T14:47:42-05:00">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/software/development/what-is-redis/">
+
+<link rel="canonical" href="http://localhost:4000/software/development/rails-mongo-api/">
 
 
 
@@ -267,15 +267,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="What Is Redis Used For">
-    <meta itemprop="description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.">
-    <meta itemprop="datePublished" content="2023-10-15T14:47:42-05:00">
+    <meta itemprop="headline" content="Rails &amp; Mongo API without generators">
+    <meta itemprop="description" content="  gem install rails  rails new journey-app --api --skip-active-record if you’re going to use another test suite such as RSpec add --skip-test --skip-system-test  add gem &#39;mongoid&#39; to your gem file  run bundle install in your terminal  create a file called config/mongoid.yml:  development:    clients:      default:        database: journey-app        hosts:          - localhost:27017        options:          server_selection_timeout: 1    you can now run your application server using bin/rails s">
+    <meta itemprop="datePublished" content="2023-12-04T14:47:42-05:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">What Is Redis Used For
+          <h1 id="page-title" class="page__title" itemprop="headline">Rails &amp; Mongo API without generators
 </h1>
           
 
@@ -303,23 +303,57 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+        <ol>
+  <li><code class="language-plaintext highlighter-rouge">gem install rails</code></li>
+  <li><code class="language-plaintext highlighter-rouge">rails new journey-app --api --skip-active-record</code> if you’re going to use another test suite such as RSpec add <code class="language-plaintext highlighter-rouge">--skip-test --skip-system-test</code></li>
+  <li>add <code class="language-plaintext highlighter-rouge">gem 'mongoid'</code> to your gem file</li>
+  <li>run <code class="language-plaintext highlighter-rouge">bundle install</code> in your terminal</li>
+  <li>create a file called config/mongoid.yml:</li>
+</ol>
 
-<p>Jekyll requires blog post files to be named according to the following format:</p>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">  <span class="na">development</span><span class="pi">:</span>
+    <span class="na">clients</span><span class="pi">:</span>
+      <span class="na">default</span><span class="pi">:</span>
+        <span class="na">database</span><span class="pi">:</span> <span class="s">journey-app</span>
+        <span class="na">hosts</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="s">localhost:27017</span>
+        <span class="na">options</span><span class="pi">:</span>
+          <span class="na">server_selection_timeout</span><span class="pi">:</span> <span class="m">1</span>
+  </code></pre></figure>
 
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+<ol>
+  <li>
+    <p>you can now run your application server using <code class="language-plaintext highlighter-rouge">bin/rails s</code></p>
+  </li>
+  <li>
+    <p>create a controller file at app/controllers/projects_controller.rb</p>
+  </li>
+</ol>
 
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">Api::V1::ProjectsController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+  <span class="k">def</span> <span class="nf">index</span>
+    <span class="n">projects</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"some project"</span><span class="p">}</span>
+    <span class="n">render</span> <span class="ss">json: </span><span class="n">projects</span><span class="p">,</span> <span class="ss">status: </span><span class="mi">200</span>
+  <span class="k">end</span>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+  <span class="k">def</span> <span class="nf">show</span>
+  <span class="k">end</span>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+  <span class="k">def</span> <span class="nf">create</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></figure>
+
+<ol>
+  <li>in config/routes.rb put
+Rails.application.routes.draw do
+  namespace :api do
+ namespace :v1 do
+   resources :projects, only: [:index, :show, :create]
+ end
+  end
+end</li>
+</ol>
 
 
         
@@ -349,7 +383,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2023-10-15T14:47:42-05:00">October 15, 2023</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2023-12-04T14:47:42-05:00">December 4, 2023</time></p>
 
 
       </footer>
@@ -357,23 +391,22 @@
       <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=What+Is+Redis+Used+For%20http%3A%2F%2Flocalhost%3A4000%2Fsoftware%2Fdevelopment%2Fwhat-is-redis%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Rails+%26+Mongo+API+without+generators%20http%3A%2F%2Flocalhost%3A4000%2Fsoftware%2Fdevelopment%2Frails-mongo-api%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fsoftware%2Fdevelopment%2Fwhat-is-redis%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fsoftware%2Fdevelopment%2Frails-mongo-api%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fsoftware%2Fdevelopment%2Fwhat-is-redis%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fsoftware%2Fdevelopment%2Frails-mongo-api%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/web/security/what-is-kafka/" class="pagination--pager" title="What Is Kafka Used For
+      <a href="/software/development/methods-on-enums-ruby/" class="pagination--pager" title="Methods on Enumerables in Ruby
 ">Previous</a>
     
     
-      <a href="/software/development/rails-mongo/" class="pagination--pager" title="Rails &amp; Mongo without generators
-">Next</a>
+      <a href="#" class="pagination--pager disabled">Next</a>
     
   </nav>
 
@@ -397,7 +430,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/software/development/rails-mongo/" rel="permalink">Rails &amp; Mongo without generators
+        <a href="/software/development/methods-on-enums-ruby/" rel="permalink">Methods on Enumerables in Ruby
 </a>
       
     </h2>
@@ -415,7 +448,47 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          1 minute read
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Introduction
+One of the most fundamental things that we do as software engineers is take enumerable data and manipulate it to server the purpose or a program...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/web/software/development/rails-mongo/" rel="permalink">Rails &amp; Mongo without generators
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
         
       </span>
     
@@ -426,84 +499,6 @@
   gem install rails
   rails new journey-app --skip-active-record if you’re going to use another test suite such as RSpec add --skip-test --skip-system-test
 ...</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/web/security/what-is-kafka/" rel="permalink">What Is Kafka Used For
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different wa...</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/software/development/implementing-algorithms-pt-one/" rel="permalink">Implementing Algorithms, Basic Principles
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different wa...</p>
   </article>
 </div>
 
@@ -543,6 +538,51 @@
 
 
     <p class="archive__item-excerpt" itemprop="description">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different wa...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/technology/philosophy/data-on-persons/" rel="permalink">Data on Persons
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=&gt; prints 'Hi, Tom' to STDOUT.
+</p>
   </article>
 </div>
 

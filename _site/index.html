@@ -313,7 +313,47 @@
 <ul style="list-style-type: none">
   
     <li>
-      <a href="/software/development/rails-mongo/">Rails &amp; Mongo without generators</a>
+      <a href="/software/development/rails-mongo-api/">Rails &amp; Mongo API without generators</a>
+      <p style="display:inline-block"><ol>
+  <li><code class="language-plaintext highlighter-rouge">gem install rails</code></li>
+  <li><code class="language-plaintext highlighter-rouge">rails new journey-app --api --skip-active-record</code> if you’re going to use another test suite such as RSpec add <code class="language-plaintext highlighter-rouge">--skip-test --skip-system-test</code></li>
+  <li>add <code class="language-plaintext highlighter-rouge">gem 'mongoid'</code> to your gem file</li>
+  <li>run <code class="language-plaintext highlighter-rouge">bundle install</code> in your terminal</li>
+  <li>create a file called config/mongoid.yml:</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">  <span class="na">development</span><span class="pi">:</span>
+    <span class="na">clients</span><span class="pi">:</span>
+      <span class="na">default</span><span class="pi">:</span>
+        <span class="na">database</span><span class="pi">:</span> <span class="s">journey-app</span>
+        <span class="na">hosts</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="s">localhost:27017</span>
+        <span class="na">options</span><span class="pi">:</span>
+          <span class="na">server_selection_timeout</span><span class="pi">:</span> <span class="m">1</span>
+  </code></pre></figure>
+
+<ol>
+  <li>you can now run your application server using <code class="language-plaintext highlighter-rouge">bin/rails s</code></li>
+</ol>
+
+</p>
+    </li>
+    <hr />
+  
+    <li>
+      <a href="/software/development/methods-on-enums-ruby/">Methods on Enumerables in Ruby</a>
+      <p style="display:inline-block"><h2 id="introduction">Introduction</h2>
+<p>One of the most fundamental things that we do as software engineers is take enumerable data and manipulate it to server the purpose or a program, system and end user. At a basic level, an enumerable is just something that is able to be counted. Across various programming languages and paradigms, enumerables can be called many things and can take many forms such as hashes, lists, arrays, and various other collections. These are called data types and they are foundational to being a highly effective programmer. In fact, excellent algorithmic design can be said to rest on two facets,</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Selecting the correct structure(s) for some set of data
+2. Selecting the correct method(s) run against that data structure
+</code></pre></div></div>
+
+</p>
+    </li>
+    <hr />
+  
+    <li>
+      <a href="/web/software/development/rails-mongo/">Rails &amp; Mongo without generators</a>
       <p style="display:inline-block"><ol>
   <li><code class="language-plaintext highlighter-rouge">gem install rails</code></li>
   <li><code class="language-plaintext highlighter-rouge">rails new journey-app --skip-active-record</code> if you’re going to use another test suite such as RSpec add <code class="language-plaintext highlighter-rouge">--skip-test --skip-system-test</code></li>
@@ -341,30 +381,6 @@
  include Mongoid::Timestamps
  field :title, type: String</li>
 </ol>
-
-</p>
-    </li>
-    <hr />
-  
-    <li>
-      <a href="/software/development/what-is-redis/">What Is Redis Used For</a>
-      <p style="display:inline-block"><p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
-
-</p>
-    </li>
-    <hr />
-  
-    <li>
-      <a href="/web/security/what-is-kafka/">What Is Kafka Used For</a>
-      <p style="display:inline-block"><p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
-
-</p>
-    </li>
-    <hr />
-  
-    <li>
-      <a href="/software/development/implementing-algorithms-pt-one/">Implementing Algorithms, Basic Principles</a>
-      <p style="display:inline-block"><p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
 </p>
     </li>

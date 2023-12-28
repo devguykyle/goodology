@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>What Is Kafka Used For - Backlog_</title>
-<meta name="description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.">
+<!-- begin _includes/seo.html --><title>Methods on Enumerables in Ruby - Backlog_</title>
+<meta name="description" content="Introduction One of the most fundamental things that we do as software engineers is take enumerable data and manipulate it to server the purpose or a program, system and end user. At a basic level, an enumerable is just something that is able to be counted. Across various programming languages and paradigms, enumerables can be called many things and can take many forms such as hashes, lists, arrays, and various other collections. These are called data types and they are foundational to being a highly effective programmer. In fact, excellent algorithmic design can be said to rest on two facets, 1. Selecting the correct structure(s) for some set of data 2. Selecting the correct method(s) run against that data structure">
 
 
   <meta name="author" content="Kyle">
@@ -22,11 +22,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Backlog_">
-<meta property="og:title" content="What Is Kafka Used For">
-<meta property="og:url" content="http://localhost:4000/web/security/what-is-kafka/">
+<meta property="og:title" content="Methods on Enumerables in Ruby">
+<meta property="og:url" content="http://localhost:4000/software/development/methods-on-enums-ruby/">
 
 
-  <meta property="og:description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.">
+  <meta property="og:description" content="Introduction One of the most fundamental things that we do as software engineers is take enumerable data and manipulate it to server the purpose or a program, system and end user. At a basic level, an enumerable is just something that is able to be counted. Across various programming languages and paradigms, enumerables can be called many things and can take many forms such as hashes, lists, arrays, and various other collections. These are called data types and they are foundational to being a highly effective programmer. In fact, excellent algorithmic design can be said to rest on two facets, 1. Selecting the correct structure(s) for some set of data 2. Selecting the correct method(s) run against that data structure">
 
 
 
@@ -45,7 +45,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/web/security/what-is-kafka/">
+<link rel="canonical" href="http://localhost:4000/software/development/methods-on-enums-ruby/">
 
 
 
@@ -267,15 +267,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="What Is Kafka Used For">
-    <meta itemprop="description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.">
+    <meta itemprop="headline" content="Methods on Enumerables in Ruby">
+    <meta itemprop="description" content="IntroductionOne of the most fundamental things that we do as software engineers is take enumerable data and manipulate it to server the purpose or a program, system and end user. At a basic level, an enumerable is just something that is able to be counted. Across various programming languages and paradigms, enumerables can be called many things and can take many forms such as hashes, lists, arrays, and various other collections. These are called data types and they are foundational to being a highly effective programmer. In fact, excellent algorithmic design can be said to rest on two facets,1. Selecting the correct structure(s) for some set of data2. Selecting the correct method(s) run against that data structure">
     <meta itemprop="datePublished" content="2023-10-15T14:47:42-05:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">What Is Kafka Used For
+          <h1 id="page-title" class="page__title" itemprop="headline">Methods on Enumerables in Ruby
 </h1>
           
 
@@ -303,24 +303,15 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+        <h2 id="introduction">Introduction</h2>
+<p>One of the most fundamental things that we do as software engineers is take enumerable data and manipulate it to server the purpose or a program, system and end user. At a basic level, an enumerable is just something that is able to be counted. Across various programming languages and paradigms, enumerables can be called many things and can take many forms such as hashes, lists, arrays, and various other collections. These are called data types and they are foundational to being a highly effective programmer. In fact, excellent algorithmic design can be said to rest on two facets,</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Selecting the correct structure(s) for some set of data
+2. Selecting the correct method(s) run against that data structure
+</code></pre></div></div>
 
-<p>Jekyll requires blog post files to be named according to the following format:</p>
+<p>In this article, we will look some of the frequently used data structures in Ruby and the common methods used to manipulate the data they hold.</p>
 
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
-
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
-
-<p>Jekyll also offers powerful support for code snippets:</p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
-
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
-
+<h2 id="hashes">Hashes</h2>
 
         
       </section>
@@ -339,9 +330,9 @@
     <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
     <span itemprop="keywords">
     
-      <a href="/categories/#security" class="page__taxonomy-item" rel="tag">security</a><span class="sep">, </span>
+      <a href="/categories/#development" class="page__taxonomy-item" rel="tag">development</a><span class="sep">, </span>
     
-      <a href="/categories/#web" class="page__taxonomy-item" rel="tag">web</a>
+      <a href="/categories/#software" class="page__taxonomy-item" rel="tag">software</a>
     
     </span>
   </p>
@@ -357,22 +348,22 @@
       <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=What+Is+Kafka+Used+For%20http%3A%2F%2Flocalhost%3A4000%2Fweb%2Fsecurity%2Fwhat-is-kafka%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Methods+on+Enumerables+in+Ruby%20http%3A%2F%2Flocalhost%3A4000%2Fsoftware%2Fdevelopment%2Fmethods-on-enums-ruby%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fweb%2Fsecurity%2Fwhat-is-kafka%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fsoftware%2Fdevelopment%2Fmethods-on-enums-ruby%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fweb%2Fsecurity%2Fwhat-is-kafka%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fsoftware%2Fdevelopment%2Fmethods-on-enums-ruby%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/software/development/implementing-algorithms-pt-one/" class="pagination--pager" title="Implementing Algorithms, Basic Principles
+      <a href="/web/software/development/rails-mongo/" class="pagination--pager" title="Rails &amp; Mongo without generators
 ">Previous</a>
     
     
-      <a href="/software/development/what-is-redis/" class="pagination--pager" title="What Is Redis Used For
+      <a href="/software/development/rails-mongo-api/" class="pagination--pager" title="Rails &amp; Mongo API without generators
 ">Next</a>
     
   </nav>
@@ -397,7 +388,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/software/development/rails-mongo/" rel="permalink">Rails &amp; Mongo without generators
+        <a href="/software/development/rails-mongo-api/" rel="permalink">Rails &amp; Mongo API without generators
 </a>
       
     </h2>
@@ -415,7 +406,48 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          1 minute read
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  gem install rails
+  rails new journey-app --api --skip-active-record if you’re going to use another test suite such as RSpec add --skip-test --skip-system...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/web/software/development/rails-mongo/" rel="permalink">Rails &amp; Mongo without generators
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
         
       </span>
     
@@ -426,84 +458,6 @@
   gem install rails
   rails new journey-app --skip-active-record if you’re going to use another test suite such as RSpec add --skip-test --skip-system-test
 ...</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/software/development/what-is-redis/" rel="permalink">What Is Redis Used For
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different wa...</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/software/development/implementing-algorithms-pt-one/" rel="permalink">Implementing Algorithms, Basic Principles
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different wa...</p>
   </article>
 </div>
 
@@ -543,6 +497,51 @@
 
 
     <p class="archive__item-excerpt" itemprop="description">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different wa...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/technology/philosophy/data-on-persons/" rel="permalink">Data on Persons
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=&gt; prints 'Hi, Tom' to STDOUT.
+</p>
   </article>
 </div>
 

@@ -17,27 +17,21 @@ var store = [{
         "url": "/software/development/architecting-webapps/",
         "teaser": null
       },{
-        "title": "Implementing Algorithms, Basic Principles",
-        "excerpt":"You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...","categories": ["software","development"],
-        "tags": [],
-        "url": "/software/development/implementing-algorithms-pt-one/",
-        "teaser": null
-      },{
-        "title": "What Is Kafka Used For",
-        "excerpt":"You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...","categories": ["web","security"],
-        "tags": [],
-        "url": "/web/security/what-is-kafka/",
-        "teaser": null
-      },{
-        "title": "What Is Redis Used For",
-        "excerpt":"You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...","categories": ["software","development"],
-        "tags": [],
-        "url": "/software/development/what-is-redis/",
-        "teaser": null
-      },{
         "title": "Rails & Mongo without generators",
-        "excerpt":"gem install rails rails new journey-app --skip-active-record if you’re going to use another test suite such as RSpec add --skip-test --skip-system-test add gem 'mongoid' to your gem file run bundle install in your terminal create a file called config/mongoid.yml: development: clients: default: database: journey-app hosts: - localhost:27017 options: server_selection_timeout: 1...","categories": ["software","development"],
+        "excerpt":"gem install rails rails new journey-app --skip-active-record if you’re going to use another test suite such as RSpec add --skip-test --skip-system-test add gem 'mongoid' to your gem file run bundle install in your terminal create a file called config/mongoid.yml: development: clients: default: database: journey-app hosts: - localhost:27017 options: server_selection_timeout: 1...","categories": ["web","software","development"],
         "tags": [],
-        "url": "/software/development/rails-mongo/",
+        "url": "/web/software/development/rails-mongo/",
+        "teaser": null
+      },{
+        "title": "Methods on Enumerables in Ruby",
+        "excerpt":"Introduction One of the most fundamental things that we do as software engineers is take enumerable data and manipulate it to server the purpose or a program, system and end user. At a basic level, an enumerable is just something that is able to be counted. Across various programming languages...","categories": ["software","development"],
+        "tags": [],
+        "url": "/software/development/methods-on-enums-ruby/",
+        "teaser": null
+      },{
+        "title": "Rails & Mongo API without generators",
+        "excerpt":"gem install rails rails new journey-app --api --skip-active-record if you’re going to use another test suite such as RSpec add --skip-test --skip-system-test add gem 'mongoid' to your gem file run bundle install in your terminal create a file called config/mongoid.yml: development: clients: default: database: journey-app hosts: - localhost:27017 options: server_selection_timeout:...","categories": ["software","development"],
+        "tags": [],
+        "url": "/software/development/rails-mongo-api/",
         "teaser": null
       }]

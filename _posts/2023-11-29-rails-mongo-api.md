@@ -20,15 +20,7 @@ categories: software development
           server_selection_timeout: 1
   {% endhighlight %}
 6. you can now run your application server using `bin/rails s`
-7. create a file named app/models/project:
-```
-  class Project
-    include Mongoid::Document
-    include Mongoid::Timestamps
-    field :title, type: String
-    field :description, type: String
-  end
-```
+
 8. create a controller file at app/controllers/projects_controller.rb
 {% highlight ruby %}
 class Api::V1::ProjectsController < ApplicationController
