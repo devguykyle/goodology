@@ -5,6 +5,9 @@ permalink: /about/
 toc: true
 ---
 
+## Role
+Product Manager
+
 ## EDUCATION
 Northern Arizona University, Flagstaff, AZ — B.S. Computer Information Technology
 OCTOBER 2021
